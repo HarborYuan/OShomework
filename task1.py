@@ -7,7 +7,7 @@ num = int(input("Please input the number of process : "))
 info = []
 for i in range(num):
     t = int(input("Please input the time required for P"+str(i)+":"))
-    level = int(input("Please input the the priority of P"+str(i)+":"))
+    level = int(input("Please input the priority of P"+str(i)+":"))
     info.append({'name':"P"+str(i),'priority':level,'time':t,'state':"R"})
 info.sort(key=sortByLevel,reverse=True)
 info_R = info[:]
